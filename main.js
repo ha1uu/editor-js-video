@@ -1,5 +1,5 @@
 import './style.styl'
-import Audio from "./src/index.js";
+import Video from "./src/index.js";
 import JsonViewer from 'json-viewer-js/src/jsonViewer.js';
 
 document.querySelector('#app').innerHTML = `
@@ -10,11 +10,10 @@ document.querySelector('#app').innerHTML = `
 let savedData = {
   blocks: [
     {
-      type: "audio",
+      type: "video",
       data: {
-        title: "Lateralus",
-        audio: "/test_audio.mp3",
-        cover: "/test_cover.jpg"
+        title: "Earth View",
+        video: "/test_video.mp4"
       }
     }
   ]
@@ -35,8 +34,8 @@ new EditorJS({
     });
   },
   tools: {
-    audio: {
-      class: Audio,
+    video: {
+      class: Video,
       config: {
         headers: {
           Authorization: "Bearer 2|34O0PaoAtXpAeayiUwYSoWSVlXKbxdNukxmOILQp"

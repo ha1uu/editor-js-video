@@ -6,7 +6,7 @@ export default {
   plugins: [styles(), terser()],
   output: {
     sourcemap: true,
-    name: "EditorJSPoll",
+    name: "EditorJSVideo",
     dir: 'dist',
     assetFileNames: "[name]-[hash][extname]",
   },

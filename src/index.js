@@ -1,6 +1,6 @@
-import "./index.styl"
+require("./index.css").toString()
 
-export default class Video {
+class Video {
   rootClass = 'editor-js-video-plugin';
   title = null;
   video = null;
@@ -105,3 +105,5 @@ export default class Video {
     };
   }
 }
+
+module.exports = Video;
